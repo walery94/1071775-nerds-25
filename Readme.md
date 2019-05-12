@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Валерия Еркина](https://up.htmlacademy.ru/htmlcss/25/user/1071775).
+* Студент: [Валерия Еркина](https://htmlacademy.ru/profile/id1071775).
 * Наставник: [Артем Макаров](https://htmlacademy.ru/profile/deepsick).
 
 ---
