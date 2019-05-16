@@ -21,12 +21,11 @@
 	</header>
 	<main class="container">
 		<h1 class="visually-hidden">Дизайн-студия Нердс</h1>
-		<section class="banner">
-			<h2 class="visually-hidden"></h2>
-			<b>Долго, дорого, крупулезно.</b>
+		<section class="slider">
+			<h2 class="visually-hidden">Корпоративные ценности</h2>
+			<h3>Долго, дорого, крупулезно.</h3>
 			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 			<a href="#" class="button">Узнать больше</a>
-			<img src="img/slide-1.png" alt="">
 		</section>
 		<section class="catalog">
 			<h2 class="visually-hidden">Услуги</h2>
@@ -50,8 +49,8 @@
 					<a href="#">Заказать</a>
 				</li>
 		</section>
-		<section class="advantages">
-			<h2 class="visually-hidden"></h2>
+		<section class="info">
+			<h2 class="visually-hidden">Информация о студии</h2>
 				<b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 				<p>Выполняем заказы на разработку:</p>
@@ -61,41 +60,41 @@
 					<li>Слайдшоу и видео для корпоративных презентаций</li>
 				</ul>
 		</section>
-		<section class="">
-			<h2 class="visually-hidden"></h2>
-			<img src="img/nerds-picture.png" alt="Нердс">
-			<p>с 2004 года Любим точность во всем:</p>
-			<ul>
-				<li>
-					<p>146<span>%</span></p>
-					<p>Уровень самоотдачи</p>
-				</li>
-				<li>
-					<p>100<span>%</span></p>
-					<p>Соблюдение сроков</p>
-				</li>
-				<li>
-					<p>50<span>%</span></p>
-					<p>Минимальная предоплата</p>
-				</li>
-			</ul>
-		</section>
+		<section class="stat">
+			<h2 class="visually-hidden">Статистика</h2>
+			<img src="img/nerds-picture.png" alt="Нердс" width="360" height="208">
+			<table class="stat=table">
+				<caption>С 2004 года любим точность во всем:</caption>
+				<tr>
+					<td>146<sup>%</sup></td>
+					<td>100<sup>%</sup></td>
+					<td>50<sup>%</sup></td>
+				</tr>
+				<tr>
+					<td>Уровень самоотдачи</td>
+					<td>Соблюдение сроков</td>
+					<td>Минимальная предоплата</td>
+				</tr>
+			</table>
+			</section>
 		<section class="link">
 			<ul class="link-list">
-				<li><img src="img/htmlacdemy-logo.png" alt="HTML Академия"></li>
-				<li><img src="img/borodinski-logo.png" alt="Барбершоп Бородинский"></li>
-				<li><img src="img/pink-logo.png" alt="Пинк"></li>
-				<li><img src="img/mishka-logo.png" alt="Мишка"></li>
+				<li><img src="img/htmlacdemy-logo.png" alt="Логотип HTML Академия" width="199" height="68"></li>
+				<li><img src="img/borodinski-logo.png" alt="Логотип Барбершоп Бородинский" width="209" height="90"></li>
+				<li><img src="img/pink-logo.png" alt="Логотип компании Пинк" width="185" height="52"></li>
+				<li><img src="img/mishka-logo.png" alt="Логотип компании Мишка" width="173" height="84"></li>
 			</ul>
 		</section>
-		<section class="map">
-			<img src="img/map.jpg">
-			<img src="img/map-marker.png">
+		<section class="contacts">
+			<img src="img/map.jpg" alt="Карта" width="1140" height="416">
+			<img src="img/map-marker.png" alt="Маркер на карте" width="231" height="190">
 			<div class="contacts">
-				<h2>NЁRDS DESIGN STUDIO</h2>
+				<p>NЁRDS DESIGN STUDIO</p>
 				<p>
 					191186, Санкт-Петербург,<br>
-					ул. Б. Конюшенная, д. 19/8<br>
+					ул. Б. Конюшенная, д. 19/8
+				</p>
+				<p>
 					тел. +7 (812) 275-75-75
 				</p>
 				<a href="#">Напишите нам</a>
@@ -113,13 +112,21 @@
 	</footer>
 	<section class="modal">
 		<h2>Напишите нам</h2>
-		<label>Ваше имя:</label>
-		<input type="text" name="name" value="Имя Фамилия">
-		<label>Ваш e-mail:</label>
-		<input type="email" name="email" value="email@example.com">
-		<label>Текст письма</label>
-		<textarea>В свободной форме</textarea>
-		<input type="submit" value="Отправиль">
+		<form>
+			<p>
+				<label for="text">Ваше имя:</label>
+				<input type="text" id="text" name="name" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="email">Ваш e-mail:</label>
+				<input type="email" id="email" name="email" placeholder="email@example.com">
+			</p>
+			<p>
+				<label for="letter">Текст письма</label>
+				<textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+			</p>
+			<input type="submit" value="Отправить">
+		</form>
 	</section>
 
   </body>
