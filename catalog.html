@@ -24,28 +24,54 @@
 		<section class="filters">
 			<h2>Фильтр товаров</h2>
 			<form method="post" action="https://echo.htmlacademy.ru">
-				<p>
-					<input type="range" min="0" max="15000" name="price" id="price">
-					<label for="price">Стоимость:</label>
-					<input type="text" name="" id="">
-					<label for="">от</label>
-					<input type="text" name="" id="">
-					<label for="">до</label>
-				</p>
-				<p>
-					<input type="radio" name="network" id="network" value="adaptive" checked>Адаптиваная
-					<input type="radio" name="network" id="network" value="fixed">Фиксированная
-					<input type="radio" name="network" id="network" value="rubber">Резиновая
-					<label for="network">Сетка:</label>
-				</p>
-				<p>
-					<input type="checkbox" name="features" id="features" value="spider" checked>Спайдер
-					<input type="checkbox" name="features" id="features" value="advantages">Блок преимуществ
-					<input type="checkbox" name="features" id="features" value="news" checked>Новости
-					<input type="checkbox" name="features" id="features" value="gallery">Галерея
-					<input type="checkbox" name="features" id="features" value="cart">Корзина
-					<label for="features">Особенности:</label>
-				</p>
+				<input type="range" min="0" max="15000" name="price" id="price">
+				<label for="price">Стоимость:</label>
+				<input type="text" name="min-price" id="min-price">
+				<label for="min-price">от</label>
+				<input type="text" name="max-price" id="max-price">
+				<label for="max-price">до</label>
+				<fieldset>
+					<legend>Сетка:</legend>
+						<ul>
+							<li>
+								<input type="radio" name="network" id="adaptive" value="adaptive" checked>
+								<label for="adaptive">Адаптиваная</label>
+							</li>
+							<li>
+								<input type="radio" name="network" id="fixed" value="fixed">
+								<label for="fixed">Фиксированная</label>
+							</li>
+							<li>
+								<input type="radio" name="network" id="rubber" value="rubber">
+								<label for="rubber">Резиновая</label>
+							</li>
+						</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности:</legend>
+						<ul>
+							<li>
+								<input type="checkbox" name="features" id="slider" value="slider" checked>
+								<label for="slider">Слайдер</label>
+							</li>
+							<li>
+								<input type="checkbox" name="features" id="advantages" value="advantages">
+								<label for="advantages">Блок преимуществ</label>
+							</li>
+							<li>
+								<input type="checkbox" name="features" id="news" value="news" checked>
+								<label for="news">Новости</label>
+							</li>
+							<li>
+								<input type="checkbox" name="features" id="gallery" value="gallery">
+								<label for="gallery">Галерея</label>
+							</li>
+							<li>
+								<input type="checkbox" name="features" id="cart" value="cart">
+								<label for="cart">Корзина</label>
+							</li>
+						</ul>
+				</fieldset>
 					<input type="submit" value="Показать">
 			</form>
 		</section>
@@ -57,7 +83,7 @@
 				<li><a href="#">По типу</a></li>
 				<li><a href="#">По названию</a></li>
 			</ul>
-			<ul lass="buttons-switches">
+			<ul class="buttons-switches">
 				<li><a href="#" class="switch" aria-label="Кнопка вниз"></a></li>
 				<li><a href="#" class="switch" aria-label="Кнопка вверх"></a></li>
 			</ul>
@@ -100,7 +126,7 @@
 						<span class="circle"></span>
 						<span class="circle"></span>
 					</div>
-					<img src="img/aplus.jpg" alt="Макет сайта Аплас" width="360px" height="576px">
+					<img src="img/aplus.jpg" alt="Макет сайта Аплас" width="360" height="576">
 				</li>
 				<li class="catalog-item">
 					<div class="browser">
@@ -119,7 +145,7 @@
 			</ul>
 		</section>
 		<section class="contacts">
-			<img src="img/map.jpg" alt="Адрес компании Нердс, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1140" height="416">
+			<img src="img/map.jpg" alt="Адрес компании Нердс" width="1140" height="416">
 			<img src="img/map-marker.png" alt="Маркер на карте" width="231" height="190">
 			<div class="contacts">
 				<p>NЁRDS DESIGN STUDIO</p>
