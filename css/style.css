@@ -1,0 +1,181 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 1440px;
+  	height: 545px;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+	color: 000000;
+	line-height: 16px;
+
+	background-color: #ffffff;
+
+}
+
+body ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.main-header {
+	background-color: #eeeeee;
+}
+
+.main-header a {
+	color: #000000;
+	line-height: 30px;
+}
+
+.main-header a:hover {
+	color: #fb565a;
+}
+
+.main-header a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.slider {
+	background-color: #eeeeee;
+}
+
+.slider h3 {
+	font-size: 55px;
+	line-height: 55px;
+}
+
+.slider p {
+	color: #283136;
+	line-height: 24px;
+}
+
+.slider a {
+  color: #ffffff;
+  background-color: #fb565a;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 10px 35px;
+}
+
+.slider a:hover {
+	background-color: #e74246;
+}
+
+.slider a:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #d7373b;
+}
+
+.catalog h3 {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.catalog p {
+	line-height: 24px;
+}
+
+.catalog-list {
+	color: #283136;
+}
+
+.catalog a {
+	color: #ffffff;
+ 	text-decoration: none;
+  	border-radius: 3px;
+  	padding: 10px 35px;
+}
+
+.catalog .link-red {
+	background-color: #fb565a;
+}
+
+.catalog .link-red:hover {
+	background-color: #e74246;
+} 
+
+.catalog .link-red:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #d7373b;
+} 
+
+.catalog .link-green {
+	background-color: #00ca74;
+}
+
+.catalog .link-green:hover {
+	background-color: #00bc6c;
+} 
+
+.catalog .link-green:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #00aa62;
+} 
+
+.catalog .link-yellow {
+	background-color: #efc84a;
+}
+
+.catalog .link-yellow:hover {
+	background-color: #eab534;
+} 
+
+.catalog .link-yellow:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #e5a722;
+} 
+
+.info b {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.info p {
+	color: #283136;
+	line-height: 24px;
+}
+
+.info h3 {
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 24px;
+}
+
+.info .advantages-list {
+	color: #283136;
+}
+
+.stats td {
+	font-size: 45px;
+}
+
+.stats th {
+	font-weight: normal;
+	color: #283136;
+}
+
+.main-footer b {
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 36px;
+}
+
+.main-footer p {
+	color: #444444;
+	line-height: 24px;
+}
+
