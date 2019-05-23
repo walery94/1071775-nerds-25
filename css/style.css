@@ -34,18 +34,18 @@ a {
 	margin: 0;
 }
 
-.main-header a {
+.main-header-link {
 	color: #000000;
 	line-height: 30px;
 	font-weight: 500;
 	text-transform: uppercase;
 }
 
-.main-header a:hover {
+.main-header-link:hover {
 	color: #fb565a;
 }
 
-.main-header a:active {
+.main-header-link:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -117,7 +117,7 @@ a {
 	color: #283136;
 }
 
-.catalog a {
+.catalog-link {
 	color: #ffffff;
   	border-radius: 3px;
   	padding: 10px 35px;
@@ -126,7 +126,7 @@ a {
   	text-transform: uppercase;
 }
 
-.catalog a:active {
+.catalog-link:active {
 	color: rgba(255, 255, 255, 0.3);
 	box-shadow: 0 3px 0 0 inset rgba(0, 1, 1, 0.1);
 }
@@ -186,6 +186,7 @@ a {
 	font-weight: 700;
 	text-transform: uppercase;
 	line-height: 24px;
+	color: #000000;
 }
 
 .info .advantages-list {
