@@ -177,7 +177,7 @@ a {
 	font-weight: 500;
 }
 
-.info p {
+.info-text {
 	color: #283136;
 	line-height: 24px;
 }
@@ -189,6 +189,7 @@ a {
 }
 
 .info .advantages-list {
+	line-height: 24px;
 	color: #283136;
 }
 
@@ -200,13 +201,14 @@ a {
 
 .stats td {
 	font-size: 45px;
-	line-height: 10px;
+	line-height: 45px;
 	font-weight: 700;
 }
 
 .stats th {
 	font-weight: normal;
 	color: #283136;
+	line-height: 18px;
 }
 
 .links ul {
