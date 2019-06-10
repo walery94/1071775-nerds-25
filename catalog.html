@@ -10,16 +10,26 @@
 <body>
 	<div class="header-wrapper">
 		<header class="main-header">
-			<nav class="main-navigation">
-				<a class="header-logo" href="index.html"><img src="img/logo.svg" alt="Логотип компании Нердс" width="160" height="65"></a>
+			<nav class="main-navigation main-navigation-catalog">
+				<a class="header-logo catalog-header-logo" href="index.html"><img src="img/logo.svg" alt="Логотип компании Нердс" width="160" height="65"></a>
 				<ul class="site-navigation">
-					<li><a class="main-header-link" href="#">Студия</a></li>
-					<li><a class="main-header-link" href="#">Клиенты</a></li>
-					<li><a class="main-header-link main-header-link-active">Магазин</a></li>
-					<li><a class="main-header-link" href="#">Контакты</a></li>
+					<li class="site-navigation-item">
+						<a class="main-header-link" href="#">Студия</a>
+					</li>
+					<li class="site-navigation-item">
+						<a class="main-header-link" href="#">Клиенты</a>
+					</li>
+					<li class="site-navigation-item">
+						<a class="main-header-link main-header-link-active">Магазин</a>
+					</li>
+					<li class="site-navigation-item">
+						<a class="main-header-link" href="#">Контакты</a>
+					</li>
 				</ul>
 				<ul class="user-navigation">
-					<li><a class="main-header-link main-header-cart" href="#">Корзина</a></li>
+					<li class="site-navigation-cart">
+						<a class="main-header-link main-header-cart" href="#">Корзина</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -44,7 +54,7 @@
 							</div>
 							<div class="price-controls">
 								<label class="min-price">от <input type="text" value="0"></label>
-								<label class="max-price">от <input type="text" value="15000"></label>
+								<label class="max-price">до <input type="text" value="15000"></label>
 							</div>
 						</div>
 					</fieldset>
@@ -239,13 +249,12 @@
 		</div>
 		<section class="contacts">
 		<h2 class="visually-hidden">Контакты</h2>
-			<img src="img/map.jpg" alt="Адрес компании Нердс" width="1440" height="416">
-			<!-- <img src="img/map-marker.png" alt="Маркер на карте" width="231" height="190"> -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858715997577!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559916958622!5m2!1sru!2sru" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
 			<div class="address">
 				<div class="address-wrapper">
 					<p class="address-headline">NЁRDS DESIGN STUDIO</p>
 					<p class="address-paragraph">
-						191186, Санкт-Петербург,<br>
+						191186, Санкт-Петербург,
 						ул. Б. Конюшенная, д. 19/8
 					</p>
 					<p class="address-telephone">
@@ -285,5 +294,27 @@
 			<p>Скидка 10% для друзей из социальных сетей</p>
 		</div>
 	</footer>
+		<section class="modal">
+		<div class="modal-wrapper">
+		<h2 class="modal-headline">Напишите нам</h2>
+		<button class="close-cross" type="button"></button>
+		<form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+			<p class="name">
+				<label for="text">Ваше имя:</label>
+				<input class="invalid modal-name" type="text" id="text" name="name" placeholder="Имя Фамилия" required>
+			</p>
+			<p class="email">
+				<label for="email">Ваш e-mail:</label>
+				<input class="invalid modal-email" type="email" id="email" name="email" placeholder="email@example.com" required>
+			</p>
+			<p class="letter">
+				<label for="letter">Текст письма:</label>
+				<textarea class="modal-letter" name="letter" id="letter" placeholder="В свободной форме" required></textarea>
+			</p>
+			<input class="modal-button" type="submit" value="Отправить">
+		</form>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
