@@ -5,7 +5,7 @@ var form = document.querySelector(".modal-form");
 var myName = document.querySelector(".modal-name");
 var email = document.querySelector(".modal-email");
 var letter = document.querySelector(".modal-letter");
-var storageName = localStorage.getItem("myName");
+var buttonEsc = 27;
 
 link.addEventListener("click", function (evt) {
 	evt.preventDefault();
@@ -16,20 +16,24 @@ link.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup.classList.remove("modal-show");
+	popup.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
 	if (!myName.value || !email.value || !letter.value) {
-	evt.preventDefault();
-	console.log("Введите имя");
-	} 
+		evt.preventDefault();
+		popup.classList.remove("modal-error");
+		popup.offsetWidth = popup.offsetWidth;
+		popup.classList.add("modal-error");
+	}
 });
 
 window.addEventListener("keydown", function (evt) {
-	if (evt.keyCode === 27) {
+	if (evt.keyCode === buttonEsc) {
 		if (popup.classList.contains ("modal-show")) {
 			evt.preventDefault();
-			popup.classList.remove("modal-show")
+			popup.classList.remove("modal-show");
+			popup.classList.remove("modal-error");
 		}
 	}
 });
