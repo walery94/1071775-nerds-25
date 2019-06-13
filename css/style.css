@@ -1311,7 +1311,6 @@ input[type="radio"].visually-hidden {
 	box-sizing: border-box;
 	padding-left: 15px;
 	color: rgba(68, 68, 68, 0.5);
-	opacity: 0.5;
 	border: 2px solid #d7dcde;
 	background-color: #ffffff;
 }
@@ -1329,7 +1328,6 @@ input[type="radio"].visually-hidden {
 	padding-top: 10px;
 	padding-left: 15px;
 	color: rgba(68, 68, 68, 0.5);
-	opacity: 0.5;
 	border: 2px solid #d7dcde;
 	background-color: #ffffff;
 }
@@ -1338,7 +1336,6 @@ input[type="radio"].visually-hidden {
 .email input:hover,
 .letter textarea:hover {
 	border-color: #b4b9bb;
-	opacity: 0.5;
 }
 
 .name input:active,
@@ -1349,7 +1346,6 @@ input[type="radio"].visually-hidden {
 .letter textarea:focus {
 	outline: none;
 	color: #000000;
-	opacity: 1;
 	border-color: #000000;
 }
 
